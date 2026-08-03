@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes  } from 'react-router-dom';
 import AuthPage from './pages/AuthPage';
-import { Layout } from 'lucide-react';
+import Layout from './pages/Layout';
 
 const App = () => {
   return (
