@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes  } from 'react-router-dom';
+import { Navigate, Route, Routes  } from 'react-router-dom';
 import AuthPage from './pages/AuthPage';
 import {GuessLayout, AuthLayout} from './pages/Layout';
 import HomePage from './pages/HomePage';
@@ -23,7 +23,8 @@ const App = () => {
       </Route>
 
 
-
+    {/* Catch-all */}
+     <Route path='*' element = {<Navigate to="/" replace />} />
     </Routes>
   );
 };
